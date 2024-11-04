@@ -52,7 +52,7 @@ This educational game combines coding skills with strategic thinking, making it 
 ## Step 3: Farming on 3x3 tile
   *Demo:*
     Video Demo:
-    ![](./step_3.png)
+    ![](./step_3.mp4)
   *Code:*
   while True:
       for i in range(get_world_size()):
@@ -77,7 +77,7 @@ This educational game combines coding skills with strategic thinking, making it 
 ## Step 4: Farming carrots on 3x3 tile
   *Demo:*
     Video Demo:
-    ![](./step_4.png)
+    ![](./step_4.mp4)
   *Code:*
 (f1)
   trade(Items.Carrots_seed)
@@ -115,7 +115,7 @@ This educational game combines coding skills with strategic thinking, making it 
 ## Step 5: Farming carrots on 4x4 tile
   *Demo:*
     Video Demo:
-    ![](./step_5.png)
+    ![](./step_5.mp4)
   *Code:*
 (f1)
   trade(Items.Empty_Tank)
