@@ -154,6 +154,45 @@ This educational game combines coding skills with strategic thinking, making it 
   *Notes*
    - Using the code above I collect enough wood to upgrade most of the resourses which are upgradeable.
    - Features unlocked : Functions and varibles
+## Step 6: Farming pumpkins on 5x5 tile
+  *Demo:*
+    Video Demo:
+    ![](./step_6.mp4)
+  *Code:*
+(f1)
+  trade(Items.Pumpkins_Seed,100)
+
+(till)
+  while True:
+      for i in range(get_world_size()):
+          for j in range(get_world_size()):
+              move(East)
+              till()
+          move(North)
+    
+(main)
+   while True:
+      for i in range(get_world_size()):
+          for j in range(get_world_size()):
+              use_item(Items.Water_Tank)
+              plant(Entites.Pumpkin)
+              move(East)
+          move(North)
+      for i in range(get_world_size()):
+          for j in range(get_world_size()):
+              if can harvest():
+                 harvest()
+              move(East)
+          move(North)
+
+  *Explanation:*
+   - The code makes the farmer first tarde the carrots for pumpkin seeds 100x using multi trade and the land wile be tilled. Then it moves through the field grid, planting pumpkins in every grid box
+     and watering them as the farmer drone moves. After planting the entire grid, the grows grows and the the drone waits for the tree to grow
+     until it goes back to harvest from each planted pumpkins.
+     The process repeated endlessly because of the while True loop.
+  *Notes*
+   - Using the code above I collect enough pumpkins to utilities and upgrade to 5x5 land
+   - Features unlocked : list, fertiilizer
 
 # Challenges and Learnings
    ## Challenges
