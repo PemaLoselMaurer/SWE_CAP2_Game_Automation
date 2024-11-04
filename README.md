@@ -114,7 +114,7 @@ This educational game combines coding skills with strategic thinking, making it 
    - Using the code above I collect enough hay , wood, and carrots to unlock tree, sunflowers, pumkins, multi trade, 4x4 tile, and watering.
    - Features unlocked : Functions and varibles
 
-## Step 5: Farming carrots on 4x4 tile
+## Step 5: Farming trees on 4x4 tile
   *Demo:*
     Video Demo:
     ![](./step_5.mp4)
@@ -135,13 +135,14 @@ This educational game combines coding skills with strategic thinking, making it 
       for i in range(get_world_size()):
           for j in range(get_world_size()):
               use_item(Items.Water_Tank)
-              plant(Entites.Bush)
+              plant(Entites.Tree)
               move(East)
           move(North)
           do_a_flip()
       for i in range(get_world_size()):
           for j in range(get_world_size()):
-              harvest()
+              if can harvest():
+                 harvest()
               move(East)
           move(North)
 
